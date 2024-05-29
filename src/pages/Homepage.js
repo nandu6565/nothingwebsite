@@ -1,7 +1,7 @@
 import React from 'react';
 import "./feature.css";
-import Navbar from "../pages/Homepage"
-import Footer from './footer/footer';
+import Navbar from "../pages/navbar/Navbar"
+import Footer from '../pages/footer/Footer';
 
 function Homepage() {
   return (
