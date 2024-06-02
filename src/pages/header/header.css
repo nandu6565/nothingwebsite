@@ -1,0 +1,149 @@
+/* Header.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+.selectdropdown{
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.selectdropdown:hover{
+    color: red;
+}
+
+.dropdown-menu li a{
+    color: #000;
+    background-color: #fff;
+    margin: 0%;
+    padding: 4px 4px;
+    width: 40px;
+
+}
+
+.dropdown-menu li{
+    margin: 0%;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    color: #fff;
+}
+
+.nav-links.open{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        color: #fff;
+    }
+    .selectdropdown{
+        color: #000;
+        cursor: pointer;
+        border: none;
+    }
+
+    .hamburger-menu img {
+        cursor: pointer;
+    }
+
+    .dropdown-menu {
+        display: none;
+    position: relative;
+
+        
+    }
+    .icons{
+        display: flex;
+        justify-content: space-between;
+        width: 70px;
+        align-items: center;
+    }
+    .dropdown-menu.open {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #fff;
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 200px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        z-index: 99;
+    }
+
+    .dropdown-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .dropdown-menu ul li {
+        padding: 10px 20px;
+    }
+
+    .dropdown-menu ul li a {
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hamburger-menu {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+}
+
